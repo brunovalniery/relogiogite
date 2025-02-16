@@ -8,6 +8,9 @@ function startTime() {
   s = checkTime(s)
   document.getElementById("txt").innerHTML = h + ":" + m + ":" + s
   t = setTimeout("startTime()", 500)
+
+  let dataHoraFormatada = today.toLocaleDateString("pt-BR")
+  document.getElementById("dataHora").innerText = dataHoraFormatada
 }
 function checkTime(i) {
   if (i < 10) {
@@ -15,3 +18,6 @@ function checkTime(i) {
   }
   return i
 }
+
+//setInterval(atualizarDataHora, 1000); // Atualiza a cada segundo
+atualizarDataHora() // Exibe imediatamente ao carregar a página

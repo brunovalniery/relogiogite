@@ -37,14 +37,20 @@ header img {
 
 #fm,
 #in {
-  padding: 30px 100px;
+  padding: 30px 30px;
   align-items: center;
+  border: 1px solid black;
 }
 
 #delimitadores {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+#dia {
+  text-align: center;
+  font-size: 40px;
 }
 /*
 h2 {
@@ -59,6 +65,22 @@ h2 {
   border: none;
   background-color: whitesmoke;
   color: crimson;
+}
+
+#footer {
+  /*display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: whitesmoke;*/
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+  text-align: center; 
+  padding: 10px; 
+  background-color: #f8f9fa; 
+  font-size: 14px; 
+  color: #6c757d;
+  border-top: 1px solid #ddd;
 }
 
 input {
